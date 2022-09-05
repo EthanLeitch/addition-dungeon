@@ -1,0 +1,15 @@
+All about Math Blocks!
+1. Each Math Block in the room must have it's own random value to display (eg: 52, 48, 24) 
+2. A "solution" number must be created that can be created with a random combination of the math blocks (eg: 100)
+3. Math blocks, when close to each other, need to add their values together. (52 + 48 = 100)
+4. If the added values reach the "solution" number, the door is unlocked.
+
+Generate solution
+1. Take 2 random values from a list (make sure the same value can not be picked)
+2. Add the values and store in a variable called 'solution'
+
+Evaluate solution on collision
+1. Detect which two blocks are colliding
+2. Add the values together and compare it to the solution
+3. If it matches the solution, open the exit.
+4. If it doesn't match the solution, change the color of the blocks to red, freeze time, and restart the room.
